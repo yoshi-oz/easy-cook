@@ -1,0 +1,19 @@
+.header
+  .header__btn-home
+    = link_to "#" do
+      = icon("fas", "utensils")
+  .header__title
+    %ul.menu
+      %li.menu__single
+        %a.init-bottom{href:"#"} Easy CooKing
+        %ul.menu__second-level
+          %li
+            = link_to "All",'#'
+          %li
+            = link_to "movie",'%'
+          %li
+            = link_to "picture",'*'
+  .header__btn-user
+    = link_to "mypages/show" do
+      = icon("far", "flushed", class: "icon") 
+    = current_user.name

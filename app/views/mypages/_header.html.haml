@@ -1,0 +1,18 @@
+.header
+  .header__btn--sign-out
+    = link_to destroy_user_session_path, method: :delete do
+      = icon("fas", "sign-out-alt")
+  .header__title
+    = link_to root_path do
+      = current_user.name
+      's Page
+  .header__btn--user
+    .header__btn--user-edit
+      = link_to edit_user_path(current_user) do
+        = icon("fas", "cog", class: "icon") 
+    .header__btn--user-post
+    = link_to "#" do
+      = icon("fas", "pen-square", class: "icon") 
+    
+  
+
