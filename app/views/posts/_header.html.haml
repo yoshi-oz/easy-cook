@@ -13,7 +13,11 @@
             = link_to "movie",'%'
           %li
             = link_to "picture",'*'
-  .header__btn-user
+  .header__btn--user
     = link_to "mypages/show" do
       = icon("far", "flushed", class: "icon") 
     = current_user.name
+    .header__btn--user-post
+      = link_to "forms/new" do
+        = icon("fas", "pen-square", class: "icon") 
+
