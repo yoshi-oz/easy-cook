@@ -4,8 +4,8 @@
     margin: 60px auto;
     padding: 60px;
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 15px solid #ddd;
+    border-radius: 8px;
 
     .account-page__inner--left, .account-page__inner--right {
       float: left;
@@ -24,13 +24,14 @@
       letter-spacing: 3px;
       font-size: 40px;
       font-weight: 200;
+      font-family: 'Times New Roman', Times, serif;
 
       &:after {
         content: '';
         display: block;
-        width: 60px;
+        width: 160px;
         margin-top: 5px;
-        border-bottom: 1px solid #38aef0;
+        border-bottom: 3px solid greenyellow;
       }
     }
 
@@ -86,7 +87,7 @@
     float: left;
     margin-top: 20px;
     color: #fff;
-    background-color: #38aef0;
+    background-color: greenyellow;
   }
 
   .field-label {
