@@ -43,7 +43,6 @@
   width: 100%;
   background-color: #323314;
   overflow: scroll;
-  
   ul.table {
     display: table;
     width: 100%;
@@ -55,10 +54,16 @@
   ul.table > li {
     display: table-cell;
     float: left;
-    width: 33%;
+    width: 410px;
+    margin: 15px 18px;
   }
 }
-
+.content {
+  &__post {
+    height: 410px;
+    width: 410px;
+  }
+}  
 
 .header__title {
   .menu {

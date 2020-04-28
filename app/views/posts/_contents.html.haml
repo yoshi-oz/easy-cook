@@ -1,11 +1,10 @@
 .contents
   %ul.table
-    %li
-      hiog
-    %li
-      hi
-    %li
-      son
-    %li
-      ki
-    %li
+    - @posts.each do |post|
+      %li
+        .content
+          .content__post{:style => "background-image: url(#{post.image});"}
+            %p
+              = post.content
+            %span.name
+              = post.name
