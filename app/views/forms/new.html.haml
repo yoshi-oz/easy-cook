@@ -2,8 +2,10 @@
   .inner
     .table
       .table__image
-        = icon('fas', 'image', class: "icon") do
-          %input{type:"file", class: "hidden"} 
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class:"hidden"}
+
       .table__texts
         %ul.title
           %li 

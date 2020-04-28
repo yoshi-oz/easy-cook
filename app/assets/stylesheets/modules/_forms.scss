@@ -23,10 +23,17 @@
         width: 800px;
         height: 500px;
         background-color: #f7f7e1;
-        .icon {
-          font-size: 400px;
-          line-height: 500px;
-          padding-left: 200px;
+        position: relative;
+        font-size: 400px;
+        line-height: 500px;
+        padding-left: 200px;
+        &-input {
+          position: absolute;
+        }
+        .hidden {
+          display: none;
+        }
+        i {
           cursor: pointer;
         }
       }
