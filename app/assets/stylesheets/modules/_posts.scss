@@ -62,6 +62,20 @@
   &__post {
     height: 410px;
     width: 410px;
+    display: flex;
+    justify-content: space-between;
+    p {
+      margin: 360px 0 5px 8px;
+      font-size: 40px;
+      font-family: monospace;
+      color: rgb(29, 33, 19);
+    }
+    span.name {
+      margin: 380px 8px 5px 0;
+      font-size: 25px;
+      font-family: 'Times New Roman', Times, serif;
+      color: #999;
+    }
   }
 }  
 
