@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   resources :mypages, only: [:show]
   resources :forms, only: [:new, :create]
   resources :users, only: [:edit, :update]
-  resources :posts, only: [:index, :new, :create, :edit, :update]
+  resources :posts, only: [:index, :new, :create, :edit, :update, :destroy]
 end
