@@ -6,63 +6,8 @@
           = f.label :image, class: 'input-box__image' do
             = icon('fas', 'image', class: 'icon')
             = f.file_field :image, class: 'hidden'
-        = f.text_field :content, class: 'table__texts', placeholder: 'type a message'
-        = f.submit 'Send', class: 'send'
-
--# .form
--#   = form_for (@posts) do |f|
--#     = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-      
--#     
-        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-          %ul.title
-            %li 
-              Menu:
-              %ul.text 
-                %li.main
-                  豚丼
-            %li 
-              material:
-              %ul.text 
-                %li 
-                  豚
-                %li 
-                  醤油
-            %li 
-              recipe:
-              %ul.text 
-                %li
-                  煮る
-                %li
-                  焼く
-                %li
-            %li 
-              time:
-              %ul.number
-                %li
-                  3
-                %li.unit
-                  分
-            %li 
-              money:
-              %ul.number
-                %li
-                  310
-                %li.unit
-                  円
-            %li 
-              point:
-              %ul.last
-                %li.point
-                  dagda
-                %li.send
-                  = f.submit 'Send', class: 'send'
-
--# .form
--#   = form_for (@posts) do |f|
--#     = f.text_field :content, class: 'form__message', placeholder: 'type a message'
--#     .form__mask
--#       = f.label :image, class: 'form__mask__image' do
--#         = icon('fas', 'image', class: 'icon')
--#         = f.file_field :image, class: 'hidden'
--#     = f.submit 'Send', class: 'form__submit'
+        .table__texts
+          = f.text_field :name, class: 'title', placeholder: 'Dish name'
+          .table__texts--text
+            = f.text_area :content, class: 'detail', placeholder: 'Product introduction(商品紹介),[EX: Cooking method(料理方法),ingredient(材料),cost(費用),time(時間),point(工夫した所)]', rows: "15"
+            = f.submit 'Send', class: 'send'
