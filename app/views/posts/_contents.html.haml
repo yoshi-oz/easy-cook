@@ -4,7 +4,19 @@
       %li
         .content
           .content__post{style: "background-image: url(#{post.image});"}
+            .more
+              %ul.menu
+                %li.menu__single
+                  %a.init-bottom{href:""} 
+                  %ul.menu__second-level
+                    %li
+                      = link_to "詳細",'#'
+                    %li
+                      = link_to "編集",'%'
+                    %li
+                      = link_to "削除",'*'             
             %p
               = post.name
             %span.name
               = post.user.name
+          
