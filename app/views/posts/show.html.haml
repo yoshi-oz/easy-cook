@@ -3,6 +3,13 @@
     .table
       = form_for (@post) do |f|
         .table__imaged{:style => "background-image: url(#{@post.image});"}
+          .more
+            %ul.menu
+              %li.menu__single
+                %a.init-bottom{href:""} 
+                %ul.menu__second-level
+                  %li
+                    = link_to '編集', "/posts/#{@post.id}/edit", method: :get
         .table__texts
           = f.text_field :name, class: 'title', placeholder: 'Dish name(料理名)'
           .table__texts--text

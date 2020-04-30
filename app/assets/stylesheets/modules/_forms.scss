@@ -89,3 +89,58 @@
     }
   }
 }
+
+.form {
+  .inner__did {
+    display: inline-block;
+    padding:10px;
+    border: 1px dashed #ccc;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 242);
+    .table {
+      border: 1px solid #aaa;
+      text-align: left;
+      display: table-cell;
+      vertical-align: middle;
+      width: 800px;
+      height: 500px;
+      margin: 20px;
+      &__imaged {
+      width: 410px;
+      height: 410px;
+      background-color: white;
+      margin-left: 200px;
+      }
+      &__texts {
+        width: 800px;
+        height: 400px;
+        background-color: white;
+        overflow: scroll;
+        .title {
+          height: 80px;
+          width: 800px;
+          padding-left: 270px;
+          font-size: 30px;
+        }
+        .detail {
+          width: 800px;
+          padding: 15px 20px;
+        }
+        .send {
+          width: 100px;
+          height: 45px;
+          line-height: 45px;
+          text-align: center;
+          background-color: greenyellow;
+          cursor: pointer;
+          margin-left: 690px;
+          margin-bottom: 5px;
+          padding-left: 7px;
+          color: rgb(244, 252, 227);
+          border-radius: 7px;
+          font-size: 25px;
+        }     
+      }
+    }
+  }
+}
