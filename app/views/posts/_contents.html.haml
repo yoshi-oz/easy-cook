@@ -12,9 +12,9 @@
                     %li
                       = link_to "詳細",'#'
                     %li
-                      = link_to "編集",'%'
+                      = link_to '編集',"/posts/#{post.id}/edit", method: :get
                     %li
-                      = link_to "削除",'*'             
+                      = link_to '削除', "/posts/#{post.id}", method: :delete           
             %p
               = post.name
             %span.name
