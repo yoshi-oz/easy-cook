@@ -7,7 +7,7 @@
             = icon('fas', 'image', class: 'icon')
             = f.file_field :image, class: 'hidden'
         .table__texts
-          = f.text_field :name, class: 'title', placeholder: 'Dish name(料理名)'
+          = f.text_field :name, class: 'title', placeholder: 'Dish name(料理名)/8文字以内'
           .table__texts--text
-            = f.text_area :content, class: 'detail', placeholder: 'Product introduction(商品紹介),[EX: Cooking method(料理方法),ingredient(材料),cost(費用),time(時間),point(工夫した所)]', rows: "15"
+            = f.text_area :content, class: 'detail', placeholder: 'Product introduction(商品紹介),[EX: Cooking method(料理方法),ingredient(材料),cost(費用),time(時間),point(工夫した所)]', rows: "20"
             = f.submit 'Send', class: 'send'
