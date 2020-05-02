@@ -15,6 +15,9 @@
    font-size: 45px;
    font-family: 'Times New Roman', Times, serif;
    margin-left: 20px;
+   &--text {
+     margin-right: 100px;
+   }
   }
   &__btn{
     display: flex;
@@ -71,10 +74,10 @@
       color: rgb(29, 33, 19);
     }
     span.name {
-      margin: 380px 8px 5px 0;
-      font-size: 25px;
+      margin: 375px 8px 5px 0;
+      font-size: 26px;
       font-family: 'Times New Roman', Times, serif;
-      color: #999;
+      color: black;
     }
   }
 }  

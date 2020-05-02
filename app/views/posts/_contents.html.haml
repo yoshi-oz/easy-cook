@@ -11,10 +11,6 @@
                   %ul.menu__second-level
                     %li
                       = link_to "詳細", "/posts/#{post.id}", method: :get
-                    %li
-                      = link_to '編集', "/posts/#{post.id}/edit", method: :get
-                    %li
-                      = link_to '削除', "/posts/#{post.id}", method: :delete           
             %p
               = post.name
             %span.name

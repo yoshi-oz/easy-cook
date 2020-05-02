@@ -1,47 +1,20 @@
 .contents
   .history
-    .history__title
-      History
-    %ul 
-      %li 
-        All
-        %ul.table
-          %li
-          hkgu
-          %li
-            bitikuso
-          %li
-            kinntama
-      %li 
-        movie
-        %ul.table
-          %li
-          %li
-          %li
-      %li 
-        picture
-        %ul.table
-          %li
-          %li
-          %li
-  .favorite
-    Favorite
-    %ul 
-      %li 
-        All
-        %ul.table
-          %li
-          %li
-          %li
-      %li 
-        movie
-        %ul.table
-          %li
-          %li
-          %li
-      %li 
-        picture
-        %ul.table
-          %li
-          %li
-          %li
+    History
+    %ul.table
+      - @posts.each do |post|
+        %li
+          .content
+            .content__post{style: "background-image: url(#{post.image});"}
+              .more
+                %ul.menu
+                  %li.menu__single
+                    %a.init-bottom{href:""} 
+                    %ul.menu__second-level
+                      %li
+                        = link_to "詳細", "/posts/#{post.id}", method: :get
+                      %li
+                        = link_to '編集', "/posts/#{post.id}/edit", method: :get
+                      %li
+                        = link_to '削除', "/posts/#{post.id}", method: :delete           
+

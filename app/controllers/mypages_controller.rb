@@ -4,7 +4,8 @@ class MypagesController < ApplicationController
   end
   
   def show
-    # @post = Post.find(params[:id])
+    @name = current_user.name
+    @posts = current_user.posts
   end
 
 end

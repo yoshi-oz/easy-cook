@@ -48,7 +48,7 @@
   justify-content: space-between;
   padding: 35px 35px ;
   .history {
-    width: 48%;
+    width: 99%;
     height: calc(100vh - 120px);
     background-color: white;
     font-size: 50px;
@@ -57,6 +57,7 @@
     ul {
       font-size: 30px;
       text-align: left;
+      font-size: 20px;
       li {
         ul.table {
           display: table;
@@ -72,37 +73,6 @@
           float: left;
           width: 33%;
         }
-
-      }
-    }
-  }
-  .favorite {
-    width: 48%;
-    height: calc(100vh - 120px);
-    background-color: gray;
-    font-size: 50px;
-    text-align: center;
-    color: white;
-    overflow: scroll;
-    ul{
-      font-size: 30px;
-      text-align: left;
-      li {
-        ul.table {
-          display: table;
-          width: 100%;
-          padding: 15px;
-          font-size: 10px;
-        }
-        ul.table > li:nth-child(3n+1) {
-          clear: both;
-        }
-        ul.table > li {
-          display: table-cell;
-          float: left;
-          width: 33%;
-        }
-      
       }
     }
   }
