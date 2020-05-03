@@ -14,6 +14,8 @@ module EasyCook
       g.helper false
       g.test_framework false
     config.i18n.default_locale = :ja
+    config.assets.initialize_on_precompile = false
     end
   end
 end
+

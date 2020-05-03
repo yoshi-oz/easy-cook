@@ -52,3 +52,7 @@ production:
   database: easy-cook_production
   username: easy-cook
   password: <%= ENV['EASY-COOK_DATABASE_PASSWORD'] %>
+  url: <%= ENV['mysql://bfab796bac9a1b:92d4a3a1@us-cdbr-east-06.cleardb.net/heroku_a5f6ccf09a94e8a?reconnect=true'] %>
+  username: <%= ENV[' bfab796bac9a1b'] %>
+  password: <%= ENV['92d4a3a1'] %>
+  master_key: <%= ENV['dfae3ba4943e76b343c2b191a7127671e94b640690f275edab7ebc422380e72114293dfb1a528df5ab816d6bdc98b41c27ebceaeec9b8da80113b18d2a34c727'] %>
