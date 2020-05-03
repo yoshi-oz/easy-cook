@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+postsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string||
+|content|text||
+|image|string||
+|user_id|integer|null: false, foreign_key: true|
 
-Things you may want to cover:
+### Association
+- belongs_to :user
 
-* Ruby version
+usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, add_index:true|
+|email|string|null: false,unique:true|
+|password|string|null: false|
 
-* System dependencies
+### Association
+- has_many :posts
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

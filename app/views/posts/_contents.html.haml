@@ -1,7 +1,6 @@
 .contents
   .contents__title
     %a{name: "picture"} Picture
- 
     %ul.table
       - @posts.each do |post|
         %li
@@ -20,16 +19,7 @@
                 = post.user.name
         
     .contents__title
-      %a{name: "movie"} Movie
-        
-      %ul.table
-        %li
-          未実装！！
-        %li
-        %li
-    .contents__title
       %a{name: "text"} Text
-        
       %ul.table
         - @posts.each do |post|
           %li

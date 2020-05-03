@@ -5,7 +5,7 @@ class MypagesController < ApplicationController
   
   def show
     @name = current_user.name
-    @posts = current_user.posts
+    @posts = current_user.posts.order("created_at DESC")
   end
 
 end
